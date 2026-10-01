@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь - China Beyond the Wall</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="../images/hero/logo8.jpg" alt="Логотип Китай" class="logo">
+                <span class="brand-name">China Beyond the Wall</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Главная</a></li>
+                <li><a href="../index.html#culture" class="nav-link">Культура</a></li>
+                <li><a href="../index.html#nature" class="nav-link">Природа</a></li>
+                <li><a href="../index.html#people" class="nav-link">Люди</a></li>
+                <li><a href="../index.html#interactive" class="nav-link">Карта</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- Красивый заголовок -->
+    <section style="padding: 3rem 0;">
+        <div class="container">
+            <h1 class="elegant-main-title">Свяжитесь с нами</h1>
+            <div class="elegant-subtitle">Ваше мнение помогает нам становиться лучше</div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="section contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Расскажите нам о вашем опыте</h2>
+                    <p>Мы всегда рады услышать ваши отзывы, предложения или вопросы о Китае. Ваше мнение помогает нам
+                        создавать более качественный контент.</p>
+
+                    <div class="contact-features">
+                        <div class="contact-feature">
+                            <div class="feature-icon">💬</div>
+                            <div class="feature-text">
+                                <h4>Быстрый ответ</h4>
+                                <p>Отвечаем в течение 24 часов</p>
+                            </div>
+                        </div>
+                        <div class="contact-feature">
+                            <div class="feature-icon">🔒</div>
+                            <div class="feature-text">
+                                <h4>Конфиденциальность</h4>
+                                <p>Ваши данные в безопасности</p>
+                            </div>
+                        </div>
+                        <div class="contact-feature">
+                            <div class="feature-icon">🌟</div>
+                            <div class="feature-text">
+                                <h4>Ценим каждого</h4>
+                                <p>Каждое сообщение важно для нас</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="feedbackForm" action="https://formspree.io/f/xdkpqnre" method="POST">
+
+                        <input type="hidden" name="_subject" value="Новое сообщение с China Beyond the Wall">
+                        <input type="text" name="_gotcha" style="display:none">
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email адрес *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Тема сообщения</label>
+                            <select id="subject" name="subject">
+                                <option value="">Выберите тему</option>
+                                <option value="feedback">Отзыв о сайте</option>
+                                <option value="question">Вопрос о Китае</option>
+                                <option value="suggestion">Предложение</option>
+                                <option value="cooperation">Сотрудничество</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Ваше сообщение *</label>
+                            <textarea id="message" name="message" required
+                                placeholder="Расскажите нам, что вы думаете..." rows="6"></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Хочу получать новости о Китае</label>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            <span class="button-text">Отправить сообщение</span>
+                            <span class="button-loading">Отправка...</span>
+                        </button>
+
+                        <div class="form-notice">
+                            <p>* Обязательные поля для заполнения</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message Section (скрыта по умолчанию) -->
+    <section id="success-message" class="section success-section" style="display: none;">
+        <div class="container">
+            <div class="success-content">
+                <div class="success-icon">✅</div>
+                <h2>Спасибо за ваше сообщение!</h2>
+                <p>Мы получили ваше сообщение и свяжемся с вами в ближайшее время. Обычно мы отвечаем в течение 24
+                    часов.</p>
+                <button class="cta-button" onclick="showFormAgain()">Отправить ещё одно сообщение</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Information Section -->
+    <section class="section author-section">
+        <div class="container">
+            <div class="author-container">
+                <div class="author-avatar">
+                    <div class="avatar-placeholder">👨‍💻</div>
+                </div>
+                <div class="author-info">
+                    <h2>Об авторе проекта</h2>
+                    <h3>Алпысбай Алишер</h3>
+                    <p class="author-title">Основатель проекта "China Beyond the Wall"</p>
+
+                    <div class="author-bio">
+                        <p> Родился и вырос в Актобе, сейчас живу в Алмате. Это сайт где делюсь богатством китайского
+                            культурного наследия с международной аудиторией.</p>
+
+                        <div class="author-details">
+                            <div class="detail-item">
+                                <strong>📍 Локация:</strong> Алматы, Казахстан
+                            </div>
+                            <div class="detail-item">
+                                <strong>🎓 Образование:</strong> Казахский национальный исследовательский технический
+                                университет (информационная безопасность)
+                            </div>
+                            <div class="detail-item">
+                                <strong>📚 Специализация:</strong> Информационная безопасность
+                            </div>
+                            <div class="detail-item">
+                                <strong>🌍 Языки:</strong> Казахский (носитель), Русский (B2), Английский (B1)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="author-links">
+                        <p>email: <a href="mailto:alpysbayalish@gmail.com" class="email-link">info@chinabeyond.ru</a></p>
+                        <a href="https://t.me/weichen_china" class="author-link">📱 Telegram</a>
+                        <a href="https://vk.com/weichen_china" class="author-link">👥 VK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>China Beyond the Wall</h4>
+                    <p>Ваш гид по настоящему Китаю</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="art.html">Искусство</a></li>
+                        <li><a href="philosophy.html">Философия</a></li>
+                        <li><a href="cuisine.html">Кухня</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>email: info@chinabeyond.ru</p>
+                    <p>telegram: @chinabeyond</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 China Beyond the Wall. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // Обработка формы
+        document.getElementById('feedbackForm').addEventListener('submit', function (e) {
+            // Не отменяем отправку (e.preventDefault() удаляем!)
+            // Форма отправится нормально на Formspree
+
+            // Показываем анимацию загрузки
+            const submitButton = this.querySelector('.submit-button');
+            submitButton.classList.add('loading');
+
+            // Formspree сам перенаправит на страницу успеха
+            // Мы просто показываем наш красивый loading
+        });
+
+        // Удалите старую функцию showFormAgain() или обновите её:
+        function showFormAgain() {
+            // Показываем форму снова и скрываем сообщение об успехе
+            document.getElementById('contact-form').style.display = 'block';
+            document.getElementById('success-message').style.display = 'none';
+
+            // Прокручиваем к форме
+            document.getElementById('contact-form').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <!-- Музыкальный плеер -->
+<div id="music-player" class="music-player">
+    <button id="music-toggle" class="music-btn">🔈 Вкл</button>
+    
+    <div class="volume-control">
+        <span class="volume-icon">🔊</span>
+        <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" step="0.1" value="0.5">
+    </div>
+</div>
+
+<!-- Аудио элемент -->
+<audio id="bg-music" loop preload="auto">
+    <source src="../music/bb0718fa61886da.mp3" type="audio/mpeg">
+    Ваш браузер не поддерживает аудио элемент.
+</audio>
+
+<script src="../music-player.js"></script>
+</body>
+
+</html>
