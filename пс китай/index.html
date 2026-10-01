@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Китай Beyond the Wall - Ваш гид по настоящему Китаю</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   
+    <header class="header"> 
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="images/hero/logo8.jpg" alt="Логотип Китай" class="logo">
+                <span class="brand-name">China Beyond the Wall</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Главная</a></li>
+                <li><a href="#culture" class="nav-link">Культура</a></li>
+                <li><a href="#nature" class="nav-link">Природа</a></li>
+                <li><a href="#interactive" class="nav-link">Карта</a></li>
+                <li> <a href="pages/gallery.html" class="nav-link">Галерея </a></li>
+                <li> <a href="pages/contact.html" class="nav-link">Обратный связь </a></li>
+            </ul>
+          
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Китай Beyond the Wall</h1>
+            <p class="hero-subtitle">От мегаполисов до глухих деревень. Ваш интерактивный гид по настоящему Китаю</p>
+            <button class="cta-button">Начать путешествие</button>
+        </div>
+        <div class="scroll-indicator">
+            <span>↓</span>
+        </div>
+
+    </section>
+
+    <!-- Culture Section -->
+    <section id="culture" class="section culture-section">
+        <div class="container">
+            <h2 class="section-title">🎎 Культура и Традиции</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🖌️</div>
+                    <h3>Искусство</h3>
+                    <p>Каллиграфия, живопись, опера и керамика</p>
+                    <a href="pages/art.html" class="card-link">Узнать больше →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📜</div>
+                    <h3>Философия</h3>
+                    <p>Конфуцианство, Даосизм, Буддизм</p>
+                    <a href="pages/philosophy.html" class="card-link">Узнать больше →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🍜</div>
+                    <h3>Кухня</h3>
+                    <p>Региональные особенности китайской кухни</p>
+                    <a href="pages/cuisine.html" class="card-link">Узнать больше →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nature Section -->
+    <section id="nature" class="section nature-section">
+        <div class="container">
+            <h2 class="section-title">🏞️ Природа и География</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">⛰️</div>
+                    <h3>Ландшафты</h3>
+                    <p>Гималаи, пустыни, карстовые пейзажи</p>
+                    <a href="pages/landscapes.html" class="card-link">Исследовать →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🐼</div>
+                    <h3>Заповедники</h3>
+                    <p>Национальные парки и редкие животные</p>
+                    <a href="pages/reserves.html" class="card-link">Исследовать →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🚶</div>
+                    <h3>Треккинг</h3>
+                    <p>Лучшие маршруты для пеших походов</p>
+                    <a href="pages/trekking.html" class="card-link">Исследовать →</a>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+   <!-- Interactive Map Section -->
+<section id="interactive" class="section map-section">
+    <div class="container">
+        <h2 class="section-title">🗺️ Интерактивная карта Китая</h2>
+        <div class="map-container">
+            <div class="china-map">
+                <!-- Контейнер для карты с метками -->
+                <div class="map-image-container">
+                    <img src="images/hero/Без названия (1).png" alt="Карта Китая" class="map-image">
+                    
+                    <!-- Метки городов -->
+                    <div class="city-marker" data-city="beijing" style="top: 43%; left: 67%;">
+                        <div class="marker-dot"></div>
+                        <div class="marker-pulse"></div>
+                        <div class="city-name">Пекин</div>
+                    </div>
+                    
+                    <div class="city-marker" data-city="shanghai" style="top: 65%; left: 77%;">
+                        <div class="marker-dot"></div>
+                        <div class="marker-pulse"></div>
+                        <div class="city-name">Шанхай</div>
+                    </div>
+                    
+                    <div class="city-marker" data-city="guangzhou" style="top: 88%; left: 69%;">
+                        <div class="marker-dot"></div>
+                        <div class="marker-pulse"></div>
+                        <div class="city-name">Гуанчжоу</div>
+                    </div>
+                    
+                    <div class="city-marker" data-city="chengdu" style="top: 72%; left: 50%;">
+                        <div class="marker-dot"></div>
+                        <div class="marker-pulse"></div>
+                        <div class="city-name">Чэнду</div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-info">
+                <h3>Выберите город на карте</h3>
+                <p>Кликните на любой город, чтобы узнать о нем больше</p>
+                <div id="city-preview" class="city-preview">
+                    <p>Наведите курсор на метку города для предпросмотра</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>China Beyond the Wall</h4>
+                    <p>Ваш гид по настоящему Китаю</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="#culture">Культура</a></li>
+                        <li><a href="#nature">Природа</a></li>
+                        <li><a href="#people">Люди</a></li>
+                        <li><a href="#travel">Путешествия</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>email: example@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 China Beyond the Wall. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Музыкальный плеер -->
+<div id="music-player" class="music-player">
+    <button id="music-toggle" class="music-btn">🔈 Вкл</button>
+    
+    <div class="volume-control">
+        <span class="volume-icon">🔊</span>
+        <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" step="0.1" value="0.5">
+    </div>
+</div>
+
+
+<audio id="bg-music" loop preload="auto">
+    <source src="music/bb0718fa61886da.mp3" type="audio/mpeg">
+    Ваш браузер не поддерживает аудио элемент.
+</audio>
+
+
+
+    
+    <!-- Подключаем JavaScript -->
+    <script src="script.js"></script>
+    <script src="music-player.js"></script>
+    
+</body>
+
+</html>
